@@ -1,0 +1,9 @@
+baseURL = "https://vaisakhnv.com/"
+title = "Vaisakh N V"
+theme = "PaperMod"
+
+[params]
+  author = "Vaisakh Naduvodi Viswambharan"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
