@@ -13,10 +13,6 @@ theme = "PaperMod"
     enabled = true
     title = "Vaisakh N V"
     subtitle = "Digital Design | Verification | AI-assisted Formal Methods"
-    imageUrl = ""
-    imageTitle = "Vaisakh N V"
-    imageWidth = 140
-    imageHeight = 140
 
   [[params.socialIcons]]
     name = "github"
@@ -24,7 +20,7 @@ theme = "PaperMod"
 
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://www.linkedin.com/"
+    url = "https://www.linkedin.com/"   # replace with your profile
 
   [[params.socialIcons]]
     name = "email"
@@ -35,18 +31,22 @@ theme = "PaperMod"
     name = "About"
     url = "/about/"
     weight = 1
+
   [[menu.main]]
     name = "Research"
     url = "/research/"
     weight = 2
+
   [[menu.main]]
     name = "Projects"
     url = "/projects/"
     weight = 3
+
   [[menu.main]]
     name = "Publications"
     url = "/publications/"
     weight = 4
+
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
