@@ -1,9 +1,53 @@
 baseURL = "https://vaisakhnv.com/"
+languageCode = "en-us"
 title = "Vaisakh N V"
 theme = "PaperMod"
 
 [params]
   author = "Vaisakh Naduvodi Viswambharan"
   defaultTheme = "auto"
-  ShowReadingTime = true
+  ShowReadingTime = false
   ShowBreadCrumbs = true
+
+  [params.profileMode]
+    enabled = true
+    title = "Vaisakh N V"
+    subtitle = "Digital Design | Verification | AI-assisted Formal Methods"
+    imageUrl = ""
+    imageTitle = "Vaisakh N V"
+    imageWidth = 140
+    imageHeight = 140
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/VNV-Devops"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:vaisakh.viswam96@gmail.com"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
