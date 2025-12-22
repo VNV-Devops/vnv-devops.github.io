@@ -14,6 +14,22 @@ theme = "PaperMod"
     title = "Vaisakh N V"
     subtitle = "Digital Design | Verification | AI-assisted Formal Methods"
 
+  [[params.profileMode.buttons]]
+    name = "Research"
+    url = "/research/"
+
+  [[params.profileMode.buttons]]
+    name = "Projects"
+    url = "/projects/"
+
+  [[params.profileMode.buttons]]
+    name = "Publications"
+    url = "/publications/"
+
+  [[params.profileMode.buttons]]
+    name = "Contact"
+    url = "/contact/"
+
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/VNV-Devops"
