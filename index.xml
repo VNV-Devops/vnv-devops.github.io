@@ -13,61 +13,62 @@
       <link>https://vaisakhnv.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vaisakhnv.com/about/</guid>
-      <description>&lt;p&gt;I am Vaisakh Naduvodi Viswambharan, a Master’s student in Nanoelectronic Systems at TU Dresden, working on digital design, verification, and AI-assisted formal methods.&lt;/p&gt;
-&lt;p&gt;This site highlights my research, projects, and publications.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I’m &lt;strong&gt;Vaisakh Naduvodi Viswambharan&lt;/strong&gt;, a Master’s student in &lt;strong&gt;Nanoelectronic Systems at TU Dresden&lt;/strong&gt;. My focus is &lt;strong&gt;digital IC design and verification&lt;/strong&gt;, and I’m particularly interested in applying &lt;strong&gt;Generative AI&lt;/strong&gt; to make verification and engineering workflows faster, more systematic, and easier to scale.&lt;/p&gt;
+&lt;p&gt;If you want a quick overview, start with &lt;strong&gt;Projects&lt;/strong&gt;. If you want the academic record, go to &lt;strong&gt;Publications&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-im-working-on-now&#34;&gt;What I’m working on now&lt;/h3&gt;
+&lt;p&gt;My thesis explores how AI can help turn design intent into reliable verification results with less manual iteration. In parallel, I’m building &lt;strong&gt;SaxoFlow&lt;/strong&gt;, a student-focused initiative that combines &lt;strong&gt;AI-assisted workflows&lt;/strong&gt; with &lt;strong&gt;open-source EDA tools&lt;/strong&gt; to make learning and prototyping in digital design and verification more accessible.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
       <link>https://vaisakhnv.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vaisakhnv.com/contact/</guid>
-      <description>&lt;ul&gt;
+      <description>&lt;p&gt;If you&amp;rsquo;d like to connect about a PhD opportunity, research collaboration, or a role in digital design/verification (especially where GenAI is used seriously), feel free to reach out.&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;Email: &lt;a href=&#34;mailto:vaisakh.viswam96@gmail.com&#34;&gt;vaisakh.viswam96@gmail.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/VNV-Devops&#34;&gt;https://github.com/VNV-Devops&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;LinkedIn: (add your profile link)&lt;/li&gt;
+&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/vaisakh-naduvodi-viswambharan-1045b3138/&#34;&gt;https://www.linkedin.com/in/vaisakh-naduvodi-viswambharan-1045b3138/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google Scholar: &lt;a href=&#34;https://scholar.google.com/citations?user=d1vnfGEAAAAJ&amp;amp;hl=en&#34;&gt;https://scholar.google.com/citations?user=d1vnfGEAAAAJ&amp;amp;hl=en&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ORCID: &lt;a href=&#34;https://orcid.org/0009-0002-1101-1285&#34;&gt;https://orcid.org/0009-0002-1101-1285&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub (profile): &lt;a href=&#34;https://github.com/VNV-Devops&#34;&gt;https://github.com/VNV-Devops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub (SaxoFlow): &lt;a href=&#34;https://github.com/saxoflowlabs&#34;&gt;https://github.com/saxoflowlabs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>https://vaisakhnv.com/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vaisakhnv.com/experience/</guid>
+      <description>&lt;p&gt;If you want the full record, you can download my resume here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resume (PDF):&lt;/strong&gt; /resume/VaisakhNaduvodiViswambharan.pdf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;infineon-technologies-dresden-germany--digital-functional-verification-intern&#34;&gt;Infineon Technologies (Dresden, Germany) — Digital Functional Verification Intern&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Oct 2024–present&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Researched AI/ML methods to improve digital verification workflows&lt;/li&gt;
+&lt;li&gt;Built a Python-based automation framework for RTL design, testbench generation, and formal property verification using agentic AI&lt;/li&gt;
+&lt;li&gt;Executed formal verification on representative blocks (e.g., floating-point adder, FIFO) and functional verification of an ALU using UVM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;fraunhofer-iis-germany--student-research-assistant&#34;&gt;Fraunhofer IIS (Germany) — Student Research Assistant&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Mar 2023–Sep 2024&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>
       <link>https://vaisakhnv.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vaisakhnv.com/projects/</guid>
-      <description>&lt;h2 id=&#34;personal-branding-website&#34;&gt;Personal Branding Website&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Hugo + GitHub Pages + custom domain (vaisakhnv.com)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;saxoflow-separate-personal-project&#34;&gt;SaxoFlow (separate personal project)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Open-source, AI-augmented EDA + verification tooling&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;This page highlights projects that represent what I want to be known for: &lt;strong&gt;digital chip design&lt;/strong&gt;, &lt;strong&gt;verification&lt;/strong&gt;, and &lt;strong&gt;practical use of Generative AI&lt;/strong&gt; in engineering workflows.&lt;/p&gt;
+&lt;h2 id=&#34;featured&#34;&gt;Featured&lt;/h2&gt;
+&lt;h3 id=&#34;saxoflow--open-source-design--verification-suite-ai-assisted&#34;&gt;SaxoFlow — Open-source design + verification suite (AI-assisted)&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Aug 2025–present · Personal / open-source&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;SaxoFlow is a student-focused initiative to make digital design and verification easier to learn and faster to iterate. It combines open-source EDA tools with AI-assisted workflows to reduce setup friction and repetitive work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Publications</title>
       <link>https://vaisakhnv.com/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vaisakhnv.com/publications/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Paper 1 — (add title, venue, year, link)&lt;/li&gt;
-&lt;li&gt;Paper 2 — (add title, venue, year, link)&lt;/li&gt;
-&lt;li&gt;Paper 3 — (add title, venue, year, link)&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Research</title>
-      <link>https://vaisakhnv.com/research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vaisakhnv.com/research/</guid>
-      <description>&lt;h2 id=&#34;interests&#34;&gt;Interests&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Formal verification and assertion-based verification&lt;/li&gt;
-&lt;li&gt;AI-assisted verification workflows&lt;/li&gt;
-&lt;li&gt;Digital IC design and verification methodology&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;current-focus&#34;&gt;Current focus&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;AI-augmented formal verification (spec → structured IR → properties)&lt;/li&gt;
-&lt;li&gt;Verification knowledge graphs and traceability&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>Selected publications by Vaisakh Naduvodi Viswambharan in AI-assisted verification, hardware design/verification automation, and safety-critical ECU research.</description>
     </item>
   </channel>
 </rss>

@@ -9,14 +9,14 @@ theme = "PaperMod"
   ShowReadingTime = false
   ShowBreadCrumbs = true
 
-  [params.profileMode]
-    enabled = true
-    title = "Vaisakh N V"
-    subtitle = "Digital Design | Verification | AI-assisted Formal Methods"
+[params.profileMode]
+  enabled = true
+  title = "Vaisakh N V"
+  subtitle = "Digital Design | Verification | GenAI for EDA"
 
   [[params.profileMode.buttons]]
-    name = "Research"
-    url = "/research/"
+    name = "Experience"
+    url = "/experience/"
 
   [[params.profileMode.buttons]]
     name = "Projects"
@@ -30,17 +30,17 @@ theme = "PaperMod"
     name = "Contact"
     url = "/contact/"
 
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/VNV-Devops"
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/VNV-Devops"
 
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/"   # replace with your profile
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/vaisakh-naduvodi-viswambharan-1045b3138/"
 
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:vaisakh.viswam96@gmail.com"
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:vaisakh.viswam96@gmail.com"
 
 [menu]
   [[menu.main]]
@@ -49,8 +49,8 @@ theme = "PaperMod"
     weight = 1
 
   [[menu.main]]
-    name = "Research"
-    url = "/research/"
+    name = "Experience"
+    url = "/experience/"
     weight = 2
 
   [[menu.main]]
