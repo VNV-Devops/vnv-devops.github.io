@@ -1,0 +1,37 @@
+{{- $title := .Get "title" -}}
+{{- $meta := .Get "meta" -}}
+{{- $href := .Get "href" -}}
+{{- $cta := .Get "cta" | default "Open →" -}}
+{{- $tags := .Get "tags" -}}
+
+<article class="ui-artifact ui-card" data-reveal>
+  {{- if $href -}}
+    <a class="ui-artifact-link" href="{{ $href }}">
+  {{- end -}}
+
+  <header class="ui-artifact-header">
+    <h3 class="ui-h3 ui-artifact-title">{{ $title }}</h3>
+    {{- if $meta -}}
+      <p class="ui-meta">{{ $meta }}</p>
+    {{- end -}}
+  </header>
+
+  <div class="ui-artifact-body">
+    {{ .Inner | markdownify }}
+  </div>
+
+  {{- if $tags -}}
+    <div class="ui-tags" aria-label="Tags">
+      {{- range (split $tags ",") -}}
+        {{- $t := trim . " " -}}
+        {{- if $t -}}<span class="ui-tag">{{ $t }}</span>{{- end -}}
+      {{- end -}}
+    </div>
+  {{- end -}}
+
+  <div class="ui-artifact-cta">{{ $cta }}</div>
+
+  {{- if $href -}}
+    </a>
+  {{- end -}}
+</article>

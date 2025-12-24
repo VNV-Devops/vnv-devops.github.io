@@ -1,0 +1,6 @@
+<div class="ui-abstract" data-reveal>
+  <div class="ui-abstract-kicker">{{ with .Get "kicker" }}{{ . }}{{ else }}Abstract{{ end }}</div>
+  <div class="ui-abstract-body">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

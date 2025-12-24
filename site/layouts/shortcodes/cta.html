@@ -1,0 +1,15 @@
+{{- $title := .Get "title" | default "Next step" -}}
+{{- $body := .Get "body" | default "If you want to collaborate, discuss roles, or review artifacts, reach out." -}}
+{{- $pText := .Get "primary_text" | default "Contact" -}}
+{{- $pHref := .Get "primary_href" | default "/contact/" -}}
+{{- $sText := .Get "secondary_text" | default "View Evidence" -}}
+{{- $sHref := .Get "secondary_href" | default "/projects/" -}}
+
+<section class="ui-cta ui-card" data-reveal>
+  <h2 class="ui-h2">{{ $title }}</h2>
+  <p class="ui-muted">{{ $body }}</p>
+  <div class="ui-cta-row">
+    <a class="ui-btn ui-btn-primary" href="{{ $pHref }}">{{ $pText }}</a>
+    <a class="ui-btn ui-btn-secondary" href="{{ $sHref }}">{{ $sText }}</a>
+  </div>
+</section>
