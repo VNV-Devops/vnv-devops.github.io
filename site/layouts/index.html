@@ -1,0 +1,166 @@
+{{ define "main" }}
+<main class="main ui-home">
+
+  <!-- HERO -->
+  <section class="ui-section ui-hero" data-reveal>
+    <div class="ui-container">
+      <p class="ui-kicker">Evidence-first portfolio · Digital IC verification · GenAI for EDA</p>
+
+      <h1 class="ui-h1">Vaisakh Naduvodi Viswambharan</h1>
+      <p class="ui-lede">
+        I work on <strong>digital IC design and functional verification</strong>, and I build <strong>GenAI-assisted verification tooling</strong>
+        that helps engineers move from intent to reliable evidence with less iteration.
+      </p>
+
+      <div class="ui-hero-split">
+        <div class="ui-split-card" data-reveal>
+          <h2 class="ui-h2">Digital Verification Engineer</h2>
+          <ul class="ui-bullets">
+            <li>Functional verification and proof-oriented workflows (UVM + formal)</li>
+            <li>Assertion strategy, coverage thinking, and debugging discipline</li>
+            <li>Systems mindset: correctness, traceability, and repeatable process</li>
+          </ul>
+        </div>
+
+        <div class="ui-split-card" data-reveal>
+          <h2 class="ui-h2">GenAI for EDA Builder</h2>
+          <ul class="ui-bullets">
+            <li>Agentic workflows for RTL, testbenches, and properties</li>
+            <li>Tool-centric pipelines with structured IRs and evaluation loops</li>
+            <li>Open-source direction via SaxoFlow and reproducible artifacts</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ui-cta-row" data-reveal>
+        <a class="ui-btn ui-btn-primary" href="#evidence">View Evidence</a>
+        <a class="ui-btn ui-btn-secondary" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF STRIP -->
+  <section class="ui-section" data-reveal>
+    <div class="ui-container">
+      <div class="ui-proof-strip" role="list" aria-label="Proof strip">
+        <div class="ui-chip" role="listitem">
+          <span class="ui-chip-title">Publications</span>
+          <span class="ui-chip-body">Peer-reviewed + accepted (IEEE/SBCCI, IEEE ICM)</span>
+        </div>
+        <div class="ui-chip" role="listitem">
+          <span class="ui-chip-title">Awards</span>
+          <span class="ui-chip-body">Innovation Awards (Infineon 2025, Bosch 2020)</span>
+        </div>
+        <div class="ui-chip" role="listitem">
+          <span class="ui-chip-title">Domains</span>
+          <span class="ui-chip-body">Formal · UVM · RTL · RISC-V · FP</span>
+        </div>
+        <div class="ui-chip" role="listitem">
+          <span class="ui-chip-title">Tooling</span>
+          <span class="ui-chip-body">SystemVerilog · SVA · Python · automation</span>
+        </div>
+        <div class="ui-chip" role="listitem">
+          <span class="ui-chip-title">Open-source</span>
+          <span class="ui-chip-body">SaxoFlow ecosystem and artifacts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE MAP -->
+  <section class="ui-section" data-reveal>
+    <div class="ui-container">
+      <h2 class="ui-h2">Evidence path</h2>
+      <p class="ui-muted">A simple, consistent story: intent → implementation → blocks → evidence → interface.</p>
+
+      <nav class="ui-evidence-map" aria-label="Evidence map">
+        <a class="ui-step" href="/about/">
+          <span class="ui-step-k">Spec</span>
+          <span class="ui-step-v">About</span>
+        </a>
+        <span class="ui-step-arrow" aria-hidden="true">→</span>
+        <a class="ui-step" href="/experience/">
+          <span class="ui-step-k">Implement</span>
+          <span class="ui-step-v">Experience</span>
+        </a>
+        <span class="ui-step-arrow" aria-hidden="true">→</span>
+        <a class="ui-step" href="/projects/">
+          <span class="ui-step-k">Verify</span>
+          <span class="ui-step-v">Projects</span>
+        </a>
+        <span class="ui-step-arrow" aria-hidden="true">→</span>
+        <a class="ui-step" href="/publications/">
+          <span class="ui-step-k">Publish</span>
+          <span class="ui-step-v">Publications</span>
+        </a>
+        <span class="ui-step-arrow" aria-hidden="true">→</span>
+        <a class="ui-step" href="/contact/">
+          <span class="ui-step-k">Interface</span>
+          <span class="ui-step-v">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTIFACTS -->
+  <section class="ui-section" id="evidence" data-reveal>
+    <div class="ui-container">
+      <h2 class="ui-h2">Featured artifacts</h2>
+      <p class="ui-muted">Three representative anchors: open-source tooling, formal verification, and RTL design integration.</p>
+
+      <div class="ui-grid" role="list">
+        <a class="ui-card" role="listitem" href="/case-studies/saxoflow/">
+          <h3 class="ui-h3">SaxoFlow</h3>
+          <p class="ui-card-body">Open-source design + verification suite with GenAI-assisted workflows.</p>
+          <div class="ui-tags">
+            <span class="ui-tag">GenAI tooling</span>
+            <span class="ui-tag">EDA</span>
+            <span class="ui-tag">Automation</span>
+          </div>
+          <span class="ui-card-cta">Read case study →</span>
+        </a>
+
+        <a class="ui-card" role="listitem" href="/case-studies/floating-point-formal/">
+          <h3 class="ui-h3">Floating-point formal verification</h3>
+          <p class="ui-card-body">RTL-to-RTL model checking with structured helper lemmas and refinement.</p>
+          <div class="ui-tags">
+            <span class="ui-tag">Formal</span>
+            <span class="ui-tag">SVA</span>
+            <span class="ui-tag">FP</span>
+          </div>
+          <span class="ui-card-cta">Read case study →</span>
+        </a>
+
+        <a class="ui-card" role="listitem" href="/case-studies/riscv-kreacher/">
+          <h3 class="ui-h3">RISC-V “Kreacher”</h3>
+          <p class="ui-card-body">RTL design + SoC integration contributions focused on correctness and clean interfaces.</p>
+          <div class="ui-tags">
+            <span class="ui-tag">RTL</span>
+            <span class="ui-tag">SoC</span>
+            <span class="ui-tag">Integration</span>
+          </div>
+          <span class="ui-card-cta">Read case study →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA REPEAT -->
+  <section class="ui-section" data-reveal>
+    <div class="ui-container">
+      <div class="ui-cta">
+        <h2 class="ui-h2">If you’re hiring or collaborating</h2>
+        <p class="ui-muted">
+          If your team cares about verification quality, proof structure, coverage, or GenAI-assisted tooling,
+          I am open to roles and research collaboration.
+        </p>
+        <div class="ui-cta-row">
+          <a class="ui-btn ui-btn-primary" href="/contact/">Go to Contact</a>
+          <a class="ui-btn ui-btn-secondary" href="/projects/">Browse Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{{ end }}

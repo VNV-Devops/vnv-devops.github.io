@@ -1,0 +1,3 @@
+{{/* Load UI refresh JS (tiny, progressive enhancement) */}}
+{{- $js := resources.Get "js/ui-refresh.js" | minify | fingerprint -}}
+<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
