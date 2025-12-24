@@ -9,6 +9,7 @@ This page highlights projects that represent what I want to be known for: **digi
 Each item is written as an artifact: what it is, what I owned, and what evidence exists.
 {{< /abstract >}}
 
+
 ## Featured
 
 {{< artifact_card
@@ -81,6 +82,13 @@ Optimized the physical design of a carry-save array multiplier with a practical 
 **Outcome**
 - Reduced area by **~60%** and improved performance by **~4×** through floorplanning and placement strategy changes
 {{< /artifact_card >}}
+
+
+## Related topics
+- [Formal verification approach](/topics/formal-verification/)
+- [Writing SVA well](/topics/systemverilog-sva/)
+- [GenAI workflows](/topics/genai-for-eda/)
+
 
 {{< cta
   title="Want to see the evidence trail end-to-end?"

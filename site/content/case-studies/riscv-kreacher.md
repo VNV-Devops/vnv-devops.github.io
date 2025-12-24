@@ -25,4 +25,5 @@ SoC integration requires stable interfaces, disciplined block boundaries, and co
 ## Evidence
 Work product exists as team integration deliverables (code not public). I can share details that are safe to discuss.
 
-{{< cta title="Want a technical walkthrough?" subtitle="If you are hiring or collaborating, send the role/block focus and what you want to evaluate (RTL quality, verification approach, integration ownership)." primaryText="Contact" primaryLink="/contact/" secondaryText="Experience" secondaryLink="/experience/" >}}
+{{< cta title="Want a technical walkthrough?" subtitle="If you are hiring or collaborating, send the role/block focus and what you want to evaluate (RTL quality, verification approach, integration ownership)." primaryText="Contact" primaryLink="/contact/" secondaryText="Experience" secondaryLink="/topics/systemverilog-sva/"
+ >}}

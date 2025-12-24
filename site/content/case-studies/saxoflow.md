@@ -38,4 +38,5 @@ Core entry point for the project, including documentation and current workflow c
 - Retrieval-grounded help (RAG) over docs/specs/project context
 - A lightweight IDE experience so students don’t live in the terminal
 
-{{< cta title="Interested in evaluating SaxoFlow?" subtitle="If you want to test it in your verification flow or collaborate on workflow automation, reach out with your block context and constraints." primaryText="Contact" primaryLink="/contact/" secondaryText="Projects" secondaryLink="/projects/" >}}
+{{< cta title="Interested in evaluating SaxoFlow?" subtitle="If you want to test it in your verification flow or collaborate on workflow automation, reach out with your block context and constraints." primaryText="Contact" primaryLink="/contact/" secondaryText="Projects" secondaryLink="/topics/genai-for-eda/"
+ >}}

@@ -3,11 +3,17 @@ languageCode = "en-us"
 title = "Vaisakh N V"
 theme = "PaperMod"
 
+enableRobotsTXT = true
+
 [params]
   author = "Vaisakh Naduvodi Viswambharan"
   defaultTheme = "auto"
   ShowReadingTime = false
   ShowBreadCrumbs = true
+  env = "production"
+  description = "Digital IC design and verification engineer building GenAI-assisted verification tooling and evidence-first workflows."
+  keywords = ["digital verification", "formal verification", "UVM", "SystemVerilog", "SVA", "GenAI for EDA", "EDA automation", "TU Dresden", "Infineon"]
+
 
 [params.profileMode]
   enabled = false

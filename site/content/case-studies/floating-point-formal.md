@@ -34,4 +34,5 @@ Floating-point units are correctness-critical and difficult to cover comprehensi
 Publication details and canonical venue links are maintained on the Publications page.
 {{< /artifact_card >}}
 
-{{< cta title="Building proof structures for arithmetic blocks?" subtitle="Send the block type, what’s failing (CEX/vacuity), and what tooling you use. I’ll respond with a structured approach." primaryText="Contact" primaryLink="/contact/" secondaryText="Publications" secondaryLink="/publications/" >}}
+{{< cta title="Building proof structures for arithmetic blocks?" subtitle="Send the block type, what’s failing (CEX/vacuity), and what tooling you use. I’ll respond with a structured approach." primaryText="Contact" primaryLink="/contact/" secondaryText="Publications" secondaryLink="/topics/formal-verification/"
+ >}}

@@ -8,6 +8,7 @@ keywords: ["Vaisakh", "Vaisakh Naduvodi Viswambharan", "publications", "digital 
 This page lists published and accepted research work. Each entry is written as a **mini-paper**: venue context, contribution summary, and artifact links.
 {{< /abstract >}}
 
+
 {{< metric_strip >}}
 - **Google Scholar:** https://scholar.google.com/citations?user=d1vnfGEAAAAJ&hl=en
 - **ORCID:** https://orcid.org/0009-0002-1101-1285
@@ -61,6 +62,11 @@ Improving thermal monitoring robustness in safety-critical ECUs by incorporating
 - Motivates stronger characterization and scenario coverage for robust monitoring
 - Practical impact: fewer false warnings and reduced validation/warranty cost
 {{< /artifact_card >}}
+
+## Related topics
+- [Formal verification methodology](/topics/formal-verification/)
+- [Property writing (SystemVerilog/SVA)](/topics/systemverilog-sva/)
+- [GenAI for EDA workflows](/topics/genai-for-eda/)
 
 {{< cta
   title="Want the artifacts behind the papers?"

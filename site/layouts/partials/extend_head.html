@@ -1,3 +1,48 @@
-{{/* Load UI refresh JS (tiny, progressive enhancement) */}}
+<!-- {{/* Load UI refresh JS (tiny, progressive enhancement) */}}
 {{- $js := resources.Get "js/ui-refresh.js" | minify | fingerprint -}}
-<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script> -->
+
+{{/* --- SEO hardening: canonical + JSON-LD --- */}}
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* JSON-LD: Person + WebSite (lightweight, SEO-safe) */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": "{{ .Site.Params.author }}",
+      "url": "{{ .Site.BaseURL }}",
+      "image": "{{ .Site.BaseURL }}",
+      "jobTitle": "Digital Verification Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Infineon Technologies"
+      },
+      "affiliation": [
+        { "@type": "CollegeOrUniversity", "name": "TU Dresden" }
+      ],
+      "sameAs": [
+        {{- $links := slice -}}
+        {{- range .Site.Params.socialIcons -}}
+          {{- $links = $links | append .url -}}
+        {{- end -}}
+        {{- range $i, $u := $links -}}
+          {{- if $i }},{{ end -}}
+          "{{ $u }}"
+        {{- end -}}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ .Site.BaseURL }}#website",
+      "url": "{{ .Site.BaseURL }}",
+      "name": "{{ .Site.Title }}",
+      "publisher": { "@id": "{{ .Site.BaseURL }}#person" }
+    }
+  ]
+}
+</script>
