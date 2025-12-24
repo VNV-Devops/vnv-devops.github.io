@@ -29,7 +29,9 @@
     </div>
   {{- end -}}
 
-  <div class="ui-artifact-cta">{{ $cta }}</div>
+  {{- if $href -}}
+    <div class="ui-artifact-cta">{{ $cta }}</div>
+  {{- end -}}
 
   {{- if $href -}}
     </a>
