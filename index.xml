@@ -1,74 +1,278 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Home on Vaisakh N V</title>
-    <link>https://vaisakhnv.com/</link>
-    <description>Recent content in Home on Vaisakh N V</description>
-    <generator>Hugo -- 0.153.1</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://vaisakhnv.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://vaisakhnv.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vaisakhnv.com/about/</guid>
-      <description>&lt;p&gt;I’m &lt;strong&gt;Vaisakh Naduvodi Viswambharan&lt;/strong&gt;, a Master’s student in &lt;strong&gt;Nanoelectronic Systems at TU Dresden&lt;/strong&gt;. My focus is &lt;strong&gt;digital IC design and verification&lt;/strong&gt;, and I’m particularly interested in applying &lt;strong&gt;Generative AI&lt;/strong&gt; to make verification and engineering workflows faster, more systematic, and easier to scale.&lt;/p&gt;
-&lt;p&gt;If you want a quick overview, start with &lt;strong&gt;Projects&lt;/strong&gt;. If you want the academic record, go to &lt;strong&gt;Publications&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;what-im-working-on-now&#34;&gt;What I’m working on now&lt;/h3&gt;
-&lt;p&gt;My thesis explores how AI can help turn design intent into reliable verification results with less manual iteration. In parallel, I’m building &lt;strong&gt;SaxoFlow&lt;/strong&gt;, a student-focused initiative that combines &lt;strong&gt;AI-assisted workflows&lt;/strong&gt; with &lt;strong&gt;open-source EDA tools&lt;/strong&gt; to make learning and prototyping in digital design and verification more accessible.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>https://vaisakhnv.com/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vaisakhnv.com/contact/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;d like to connect about a PhD opportunity, research collaboration, or a role in digital design/verification (especially where GenAI is used seriously), feel free to reach out.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Email: &lt;a href=&#34;mailto:vaisakh.viswam96@gmail.com&#34;&gt;vaisakh.viswam96@gmail.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/vaisakh-naduvodi-viswambharan-1045b3138/&#34;&gt;https://www.linkedin.com/in/vaisakh-naduvodi-viswambharan-1045b3138/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Google Scholar: &lt;a href=&#34;https://scholar.google.com/citations?user=d1vnfGEAAAAJ&amp;amp;hl=en&#34;&gt;https://scholar.google.com/citations?user=d1vnfGEAAAAJ&amp;amp;hl=en&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ORCID: &lt;a href=&#34;https://orcid.org/0009-0002-1101-1285&#34;&gt;https://orcid.org/0009-0002-1101-1285&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub (profile): &lt;a href=&#34;https://github.com/VNV-Devops&#34;&gt;https://github.com/VNV-Devops&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;GitHub (SaxoFlow): &lt;a href=&#34;https://github.com/saxoflowlabs&#34;&gt;https://github.com/saxoflowlabs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Experience</title>
-      <link>https://vaisakhnv.com/experience/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vaisakhnv.com/experience/</guid>
-      <description>&lt;p&gt;If you want the full record, you can download my resume here:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Resume (PDF):&lt;/strong&gt; /resume/VaisakhNaduvodiViswambharan.pdf&lt;/li&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Vaisakh N V</title><link>https://vaisakhnv.com/</link><description>Recent content in Home on Vaisakh N V</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://vaisakhnv.com/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://vaisakhnv.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/about/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Spec (who I am and what I build)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ I’m &lt;strong&gt;Vaisakh Naduvodi Viswambharan&lt;/strong&gt;, a Master’s student in &lt;strong&gt;Nanoelectronic Systems at TU Dresden&lt;/strong&gt;.&lt;br&gt;
+My focus is &lt;strong&gt;digital IC design and verification&lt;/strong&gt;, and I build &lt;strong&gt;GenAI-assisted tooling&lt;/strong&gt; to make verification workflows faster, more systematic, and easier to scale—without losing rigor.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Domains:&lt;/strong&gt; Formal · UVM · RTL · RISC-V · Floating-point&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What I optimize for:&lt;/strong&gt; proof structure, coverage discipline, and repeatable engineering workflows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Where to look next:&lt;/strong&gt; &lt;strong&gt;Projects&lt;/strong&gt; for artifacts, &lt;strong&gt;Publications&lt;/strong&gt; for academic evidence, &lt;strong&gt;Contact&lt;/strong&gt; for collaboration&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;infineon-technologies-dresden-germany--digital-functional-verification-intern&#34;&gt;Infineon Technologies (Dresden, Germany) — Digital Functional Verification Intern&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Oct 2024–present&lt;/em&gt;&lt;/p&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="what-im-working-on-now"&gt;What I’m working on now&lt;/h2&gt;
+&lt;p&gt;My thesis explores how AI can help turn design intent into reliable verification results with less manual iteration. In parallel, I’m building &lt;strong&gt;SaxoFlow&lt;/strong&gt;, a student-focused initiative combining &lt;strong&gt;AI-assisted workflows&lt;/strong&gt; with &lt;strong&gt;open-source EDA tools&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://vaisakhnv.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/contact/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Interface (how to reach me)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ &lt;p&gt;If you want to connect about a &lt;strong&gt;PhD opportunity&lt;/strong&gt;, &lt;strong&gt;research collaboration&lt;/strong&gt;, or a &lt;strong&gt;digital design/verification role&lt;/strong&gt; (especially where GenAI is used seriously), reach out.&lt;/p&gt;
+&lt;p&gt;I respond fastest on &lt;strong&gt;email&lt;/strong&gt; and &lt;strong&gt;LinkedIn&lt;/strong&gt;.&lt;/p&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Primary:&lt;/strong&gt; Email · LinkedIn&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evidence:&lt;/strong&gt; Publications · Case studies · GitHub artifacts&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="direct-contact"&gt;Direct contact&lt;/h2&gt;
+&lt;article class="ui-artifact ui-card" data-reveal&gt;&lt;a class="ui-artifact-link" href="mailto:vaisakh.viswam96@gmail.com"&gt;&lt;header class="ui-artifact-header"&gt;
+ &lt;h3 class="ui-h3 ui-artifact-title"&gt;Email&lt;/h3&gt;&lt;p class="ui-meta"&gt;Best for roles, PhD discussions, and collaboration proposals&lt;/p&gt;&lt;/header&gt;
+
+ &lt;div class="ui-artifact-body"&gt;
+ &lt;a href="mailto:vaisakh.viswam96@gmail.com"&gt;vaisakh.viswam96@gmail.com&lt;/a&gt;
+ &lt;/div&gt;&lt;div class="ui-tags" aria-label="Tags"&gt;&lt;span class="ui-tag"&gt;Fast response&lt;/span&gt;&lt;span class="ui-tag"&gt;Direct&lt;/span&gt;&lt;/div&gt;&lt;div class="ui-artifact-cta"&gt;Send email →&lt;/div&gt;&lt;/a&gt;&lt;/article&gt;
+
+&lt;article class="ui-artifact ui-card" data-reveal&gt;&lt;a class="ui-artifact-link" href="https://www.linkedin.com/in/vaisakh-naduvodi-viswambharan-1045b3138/"&gt;&lt;header class="ui-artifact-header"&gt;
+ &lt;h3 class="ui-h3 ui-artifact-title"&gt;LinkedIn&lt;/h3&gt;&lt;p class="ui-meta"&gt;Best for introductions and recruiter outreach&lt;/p&gt;</description></item><item><title>Experience</title><link>https://vaisakhnv.com/experience/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/experience/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Implement (roles, ownership, outcomes)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ I care about &lt;strong&gt;verification quality&lt;/strong&gt; and &lt;strong&gt;repeatable engineering workflows&lt;/strong&gt;.&lt;br&gt;
+These roles summarize what I owned, what I shipped, and the kind of problems I’m trusted with.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resume:&lt;/strong&gt; /resume/VaisakhNaduvodiViswambharan.pdf&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core focus:&lt;/strong&gt; Digital verification · formal/coverage thinking · automation · GenAI-assisted workflows&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="roles"&gt;Roles&lt;/h2&gt;
+&lt;article class="ui-artifact ui-card" data-reveal&gt;&lt;header class="ui-artifact-header"&gt;
+ &lt;h3 class="ui-h3 ui-artifact-title"&gt;Infineon Technologies (Dresden, Germany) — Digital Functional Verification Intern&lt;/h3&gt;&lt;p class="ui-meta"&gt;Oct 2024–present&lt;/p&gt;&lt;/header&gt;
+
+ &lt;div class="ui-artifact-body"&gt;
+ &lt;p&gt;&lt;strong&gt;What I did&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Researched AI/ML methods to improve digital verification workflows&lt;/li&gt;
-&lt;li&gt;Built a Python-based automation framework for RTL design, testbench generation, and formal property verification using agentic AI&lt;/li&gt;
+&lt;li&gt;Researched AI/ML approaches to improve digital verification workflows&lt;/li&gt;
+&lt;li&gt;Built a Python-based automation framework for RTL design, testbench generation, and formal property verification (agentic AI)&lt;/li&gt;
 &lt;li&gt;Executed formal verification on representative blocks (e.g., floating-point adder, FIFO) and functional verification of an ALU using UVM&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;fraunhofer-iis-germany--student-research-assistant&#34;&gt;Fraunhofer IIS (Germany) — Student Research Assistant&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Mar 2023–Sep 2024&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>https://vaisakhnv.com/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vaisakhnv.com/projects/</guid>
-      <description>&lt;p&gt;This page highlights projects that represent what I want to be known for: &lt;strong&gt;digital chip design&lt;/strong&gt;, &lt;strong&gt;verification&lt;/strong&gt;, and &lt;strong&gt;practical use of Generative AI&lt;/strong&gt; in engineering workflows.&lt;/p&gt;
-&lt;h2 id=&#34;featured&#34;&gt;Featured&lt;/h2&gt;
-&lt;h3 id=&#34;saxoflow--open-source-design--verification-suite-ai-assisted&#34;&gt;SaxoFlow — Open-source design + verification suite (AI-assisted)&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Aug 2025–present · Personal / open-source&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;SaxoFlow is a student-focused initiative to make digital design and verification easier to learn and faster to iterate. It combines open-source EDA tools with AI-assisted workflows to reduce setup friction and repetitive work.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Publications</title>
-      <link>https://vaisakhnv.com/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vaisakhnv.com/publications/</guid>
-      <description>Selected publications by Vaisakh Naduvodi Viswambharan in AI-assisted verification, hardware design/verification automation, and safety-critical ECU research.</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;&lt;strong&gt;What I optimize for&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Floating-point formal verification</title><link>https://vaisakhnv.com/case-studies/floating-point-formal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/case-studies/floating-point-formal/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Case study (formal verification)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ A scalable floating-point verification workflow using RTL-to-RTL model checking against a golden reference, structured into staged helper assertions to make proofs converge.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Focus:&lt;/strong&gt; proof structure · helper lemmas · counterexample-guided refinement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Domains:&lt;/strong&gt; floating-point · arithmetic · correctness-critical blocks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stack:&lt;/strong&gt; SystemVerilog · SVA · formal tooling · Python automation&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Floating-point units are correctness-critical and difficult to cover comprehensively with simulation alone. Formal proofs often fail without a disciplined decomposition strategy.&lt;/p&gt;</description></item><item><title>Formal verification</title><link>https://vaisakhnv.com/topics/formal-verification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/topics/formal-verification/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Topic (verification)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ Formal verification is how I turn design intent into &lt;strong&gt;provable evidence&lt;/strong&gt;. My approach is pragmatic: focus on proof structure, build helper assertions, and iterate using counterexamples and coverage signals.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Focus:&lt;/strong&gt; proof structure · convergence · evidence trail&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Methods:&lt;/strong&gt; helper lemmas · CEX-guided refinement · coverage-aware iteration&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="what-i-optimize-for"&gt;What I optimize for&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fast convergence:&lt;/strong&gt; break big goals into smaller provable claims&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Explainable failures:&lt;/strong&gt; counterexamples should point to actionable causes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repeatability:&lt;/strong&gt; artifacts, logs, and assumptions are preserved so results can be reproduced&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="typical-workflow"&gt;Typical workflow&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Scope the intent:&lt;/strong&gt; what must be true (and under which assumptions)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Define the interface:&lt;/strong&gt; clocks/resets/handshakes; avoid underspecified properties&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decompose:&lt;/strong&gt; create a staged plan (invariants / helper lemmas first)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run and refine:&lt;/strong&gt; use counterexamples to repair constraints and properties&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Measure evidence:&lt;/strong&gt; coverage/vacuity checks; avoid “proved but meaningless”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="where-this-shows-up-on-my-site"&gt;Where this shows up on my site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Floating-point case study: proof decomposition + refinement&lt;/li&gt;
+&lt;li&gt;Publications: canonical paper links and write-ups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class="ui-cta ui-card" data-reveal&gt;
+ &lt;h2 class="ui-h2"&gt;Want to discuss a formal verification problem?&lt;/h2&gt;
+ &lt;p class="ui-muted"&gt;If you want to collaborate, discuss roles, or review artifacts, reach out.&lt;/p&gt;</description></item><item><title>GenAI for EDA</title><link>https://vaisakhnv.com/topics/genai-for-eda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/topics/genai-for-eda/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Topic (workflows)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ I use GenAI where it creates leverage: generating structured artifacts, accelerating iteration loops, and reducing repetitive engineering work—while keeping an evidence trail so results remain trustworthy.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Goal:&lt;/strong&gt; faster iteration without losing rigor&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approach:&lt;/strong&gt; tool-centric pipelines · structured artifacts · reproducibility&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="what-i-believe-works-and-what-doesnt"&gt;What I believe works (and what doesn’t)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Works&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Constraining generation with &lt;strong&gt;structured schemas&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Grounding with &lt;strong&gt;project context&lt;/strong&gt; (specs, IRs, signal allowlists)&lt;/li&gt;
+&lt;li&gt;Using LLMs for &lt;strong&gt;draft → critique → repair&lt;/strong&gt; loops with tooling in the loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Doesn’t&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Projects</title><link>https://vaisakhnv.com/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/projects/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Blocks (what I build and ship)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ This page highlights projects that represent what I want to be known for: &lt;strong&gt;digital chip design&lt;/strong&gt;, &lt;strong&gt;verification&lt;/strong&gt;, and &lt;strong&gt;practical use of GenAI&lt;/strong&gt; in engineering workflows.&lt;br&gt;
+Each item is written as an artifact: what it is, what I owned, and what evidence exists.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="featured"&gt;Featured&lt;/h2&gt;
+&lt;article class="ui-artifact ui-card" data-reveal&gt;&lt;a class="ui-artifact-link" href="https://vaisakhnv.com/case-studies/saxoflow/"&gt;&lt;header class="ui-artifact-header"&gt;
+ &lt;h3 class="ui-h3 ui-artifact-title"&gt;SaxoFlow — Open-source design &amp;#43; verification suite (AI-assisted)&lt;/h3&gt;&lt;p class="ui-meta"&gt;Aug 2025–present · Personal / open-source&lt;/p&gt;&lt;/header&gt;
+
+ &lt;div class="ui-artifact-body"&gt;
+ &lt;p&gt;SaxoFlow reduces setup friction and repetitive work by combining open-source EDA tools with GenAI-assisted workflows.&lt;/p&gt;</description></item><item><title>Publications</title><link>https://vaisakhnv.com/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/publications/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Evidence (papers, venues, artifacts)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ This page lists published and accepted research work. Each entry is written as a &lt;strong&gt;mini-paper&lt;/strong&gt;: venue context, contribution summary, and artifact links.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Google Scholar:&lt;/strong&gt; &lt;a href="https://scholar.google.com/citations?user=d1vnfGEAAAAJ&amp;amp;hl=en"&gt;https://scholar.google.com/citations?user=d1vnfGEAAAAJ&amp;amp;hl=en&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ORCID:&lt;/strong&gt; &lt;a href="https://orcid.org/0009-0002-1101-1285"&gt;https://orcid.org/0009-0002-1101-1285&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="2025"&gt;2025&lt;/h2&gt;
+&lt;article class="ui-artifact ui-card" data-reveal&gt;&lt;a class="ui-artifact-link" href="https://ieeexplore.ieee.org/document/11218681"&gt;&lt;header class="ui-artifact-header"&gt;
+ &lt;h3 class="ui-h3 ui-artifact-title"&gt;Hey AI, Generate Me a Hardware Code! Agentic AI-based Hardware Design &amp;amp; Verification&lt;/h3&gt;&lt;p class="ui-meta"&gt;Conference paper (IEEE / SBCCI) · 31 Oct 2025&lt;/p&gt;&lt;/header&gt;
+
+ &lt;div class="ui-artifact-body"&gt;
+ &lt;p&gt;An agent-based approach to hardware design and verification that combines AI agents with human-in-the-loop iteration to converge toward working verification flows.&lt;/p&gt;</description></item><item><title>RISC-V “Kreacher”</title><link>https://vaisakhnv.com/case-studies/riscv-kreacher/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/case-studies/riscv-kreacher/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Case study (RTL &amp;#43; integration)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ A collaborative RISC-V processor integrated into a SoC environment, with contributions focused on datapath correctness and clean integration interfaces.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scope:&lt;/strong&gt; datapath modules · integration boundaries · correctness discipline&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stack:&lt;/strong&gt; SystemVerilog · RTL integration workflow&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; code is not public (team project)&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;SoC integration requires stable interfaces, disciplined block boundaries, and correctness-first implementation to avoid late-stage integration regressions.&lt;/p&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Implemented datapath modules including ALU and decoder&lt;/li&gt;
+&lt;li&gt;Focused on functional accuracy and clean integration&lt;/li&gt;
+&lt;li&gt;Kept interfaces predictable for SoC-level bring-up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="evidence"&gt;Evidence&lt;/h2&gt;
+&lt;p&gt;Work product exists as team integration deliverables (code not public). I can share details that are safe to discuss.&lt;/p&gt;</description></item><item><title>SaxoFlow</title><link>https://vaisakhnv.com/case-studies/saxoflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/case-studies/saxoflow/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Case study (open-source tooling)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ SaxoFlow is an evidence-first design + verification workflow that combines open-source EDA tools with GenAI-assisted generation and iteration loops—built to make learning and prototyping faster and more systematic.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Focus:&lt;/strong&gt; verification workflow automation + reproducibility&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stack:&lt;/strong&gt; Python · SystemVerilog · SVA · open-source EDA ecosystem&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Artifacts:&lt;/strong&gt; CLI flows · agent-assisted generation · logs/evidence trail&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Digital design and verification iteration is slowed down by environment setup, tool fragmentation, and repeated manual loops (install → run → debug → re-run).&lt;/p&gt;</description></item><item><title>SystemVerilog and SVA</title><link>https://vaisakhnv.com/topics/systemverilog-sva/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/topics/systemverilog-sva/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Topic (properties)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ SVA is not just syntax—good assertions encode intent precisely, resist vacuity, and scale with a proof plan. I write SVA with explicit assumptions, clear temporal structure, and reusable patterns.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Principles:&lt;/strong&gt; clarity · vacuity resistance · minimal assumptions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Patterns:&lt;/strong&gt; interface contracts · invariants · refinement lemmas&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="what-good-sva-means-in-practice"&gt;What “good SVA” means in practice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Signal discipline:&lt;/strong&gt; assertions reference stable, meaningful signals (not accidental internals)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Temporal intent:&lt;/strong&gt; preconditions and consequences are separated clearly&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Assumptions are explicit:&lt;/strong&gt; environment constraints are documented and reviewable&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vacuity checks:&lt;/strong&gt; proved properties should still be &lt;em&gt;informative&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="common-patterns-i-use"&gt;Common patterns I use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Interface contracts:&lt;/strong&gt; request/ack, ready/valid, FIFO rules&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Safety properties:&lt;/strong&gt; “this bad thing never happens”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Liveness under assumptions:&lt;/strong&gt; “eventually” properties only where appropriate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Helper lemmas:&lt;/strong&gt; small provable stepping stones for complex end-to-end goals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="where-this-shows-up-on-my-site"&gt;Where this shows up on my site&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Formal case studies (proof structure)&lt;/li&gt;
+&lt;li&gt;Publications (property strategy and evaluation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class="ui-cta ui-card" data-reveal&gt;
+ &lt;h2 class="ui-h2"&gt;Need help structuring assertions for a block?&lt;/h2&gt;
+ &lt;p class="ui-muted"&gt;If you want to collaborate, discuss roles, or review artifacts, reach out.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Case studies on Vaisakh N V</title><link>https://vaisakhnv.com/case-studies/</link><description>Recent content in Case studies on Vaisakh N V</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://vaisakhnv.com/case-studies/index.xml" rel="self" type="application/rss+xml"/><item><title>Floating-point formal verification</title><link>https://vaisakhnv.com/case-studies/floating-point-formal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/case-studies/floating-point-formal/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Case study (formal verification)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ A scalable floating-point verification workflow using RTL-to-RTL model checking against a golden reference, structured into staged helper assertions to make proofs converge.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Focus:&lt;/strong&gt; proof structure · helper lemmas · counterexample-guided refinement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Domains:&lt;/strong&gt; floating-point · arithmetic · correctness-critical blocks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stack:&lt;/strong&gt; SystemVerilog · SVA · formal tooling · Python automation&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Floating-point units are correctness-critical and difficult to cover comprehensively with simulation alone. Formal proofs often fail without a disciplined decomposition strategy.&lt;/p&gt;</description></item><item><title>RISC-V “Kreacher”</title><link>https://vaisakhnv.com/case-studies/riscv-kreacher/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/case-studies/riscv-kreacher/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Case study (RTL &amp;#43; integration)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ A collaborative RISC-V processor integrated into a SoC environment, with contributions focused on datapath correctness and clean integration interfaces.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scope:&lt;/strong&gt; datapath modules · integration boundaries · correctness discipline&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stack:&lt;/strong&gt; SystemVerilog · RTL integration workflow&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; code is not public (team project)&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;SoC integration requires stable interfaces, disciplined block boundaries, and correctness-first implementation to avoid late-stage integration regressions.&lt;/p&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Implemented datapath modules including ALU and decoder&lt;/li&gt;
+&lt;li&gt;Focused on functional accuracy and clean integration&lt;/li&gt;
+&lt;li&gt;Kept interfaces predictable for SoC-level bring-up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="evidence"&gt;Evidence&lt;/h2&gt;
+&lt;p&gt;Work product exists as team integration deliverables (code not public). I can share details that are safe to discuss.&lt;/p&gt;</description></item><item><title>SaxoFlow</title><link>https://vaisakhnv.com/case-studies/saxoflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vaisakhnv.com/case-studies/saxoflow/</guid><description>&lt;div class="ui-abstract" data-reveal&gt;
+ &lt;div class="ui-abstract-kicker"&gt;Case study (open-source tooling)&lt;/div&gt;
+ &lt;div class="ui-abstract-body"&gt;
+ SaxoFlow is an evidence-first design + verification workflow that combines open-source EDA tools with GenAI-assisted generation and iteration loops—built to make learning and prototyping faster and more systematic.
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-metrics" data-reveal&gt;
+ &lt;div class="ui-metrics-grid"&gt;
+ &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Focus:&lt;/strong&gt; verification workflow automation + reproducibility&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stack:&lt;/strong&gt; Python · SystemVerilog · SVA · open-source EDA ecosystem&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Artifacts:&lt;/strong&gt; CLI flows · agent-assisted generation · logs/evidence trail&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Digital design and verification iteration is slowed down by environment setup, tool fragmentation, and repeated manual loops (install → run → debug → re-run).&lt;/p&gt;</description></item></channel></rss>
