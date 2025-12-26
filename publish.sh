@@ -1,74 +1,59 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Usage:
-#   ./publish.sh "message"
-#   ./publish.sh -v "message"     # verbose trace
+MSG="${1:-Publish site}"
 
-VERBOSE=0
-if [[ "${1:-}" == "-v" ]]; then
-  VERBOSE=1
-  shift
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SRC_DIR="${REPO_ROOT}/site"
+DEST_DIR="${REPO_ROOT}"
+
+if [[ ! -d "${SRC_DIR}" ]]; then
+  echo "[publish] ERROR: Hugo source dir not found: ${SRC_DIR}"
+  echo "[publish] You likely ran an old publish script that deleted it. Restore using:"
+  echo "          git fetch --all --prune && git reset --hard origin/main"
+  exit 1
 fi
 
-MSG="${1:-Update site}"
-REPO="$(cd "$(dirname "$0")" && pwd)"
-LOG="${REPO}/publish_$(date +%Y%m%d_%H%M%S).log"
-
-cd "${REPO}"
-
-# Log everything to terminal AND file
-exec > >(tee -a "${LOG}") 2>&1
-
-echo
 echo "============================================================"
-echo "[publish] Repo:    ${REPO}"
+echo "[publish] Repo:    ${REPO_ROOT}"
 echo "[publish] Message: ${MSG}"
-echo "[publish] Hugo:    $(hugo version | head -n 1)"
-echo "[publish] Log:     ${LOG}"
+echo "[publish] Hugo:    $(hugo version || true)"
 echo "============================================================"
-echo
 
-if (( VERBOSE )); then
-  set -x
-fi
+# Build to a temp directory first (never build directly into repo root)
+BUILD_DIR="$(mktemp -d)"
+cleanup() { rm -rf "${BUILD_DIR}"; }
+trap cleanup EXIT
 
-echo "[publish] Cleaning previous published output in repo root..."
-rm -rf about research projects publications contact categories tags assets page public
-rm -f index.html index.xml sitemap.xml 404.html
+echo "[publish] Building Hugo site -> ${BUILD_DIR}"
+hugo --source "${SRC_DIR}" --destination "${BUILD_DIR}" --minify
 
-echo "[publish] Building Hugo site -> repo root..."
-hugo --source site --destination "${REPO}" --cleanDestinationDir
+echo "[publish] Sync build output -> repo root (keeping source + git files)"
+# rsync is safest for "replace root with build output" while excluding important folders/files
+rsync -a --delete \
+  --exclude ".git/" \
+  --exclude "site/" \
+  --exclude ".github/" \
+  --exclude "publish.sh" \
+  --exclude "dev.sh" \
+  --exclude "README.md" \
+  --exclude ".gitmodules" \
+  --exclude ".nojekyll" \
+  "${BUILD_DIR}/" "${DEST_DIR}/"
 
-echo "[publish] Verifying build output..."
-test -f index.html || { echo "[publish] ERROR: index.html missing after build"; exit 1; }
-test -d assets    || { echo "[publish] ERROR: assets/ missing after build"; exit 1; }
+# Ensure Pages doesn't try to run Jekyll
+touch "${DEST_DIR}/.nojekyll"
 
-echo "[publish] Ensuring .nojekyll..."
-touch .nojekyll
-
-echo
 echo "[publish] Git status:"
-git status -sb
+git status --porcelain
 
-echo
-echo "[publish] Staging..."
+echo "[publish] Committing + pushing"
 git add -A
-
 if git diff --cached --quiet; then
-  echo "[publish] No changes to publish. Exiting."
-  exit 0
+  echo "[publish] No changes to commit."
+else
+  git commit -m "${MSG}"
 fi
 
-echo
-echo "[publish] Committing..."
-git commit -m "${MSG}"
-
-echo
-echo "[publish] Pushing..."
-git push
-
-echo
-echo "============================================================"
-echo "[publish] Done: https://vaisakhnv.com/"
-echo "============================================================"
+git push origin "$(git branch --show-current)"
+echo "[publish] Done."
