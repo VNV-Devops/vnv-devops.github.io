@@ -1,22 +1,82 @@
 /* Evidence-first UI refresh (PaperMod extension)
-   - No images
-   - Mobile-first
-   - Progressive enhancement (JS optional)
+   Option 1: Midnight + Electric Cyan (premium, technical)
+   - Keeps existing box/card structure
+   - Adds background system + better surfaces + cyan glow accents
+   - Mobile-first, progressive enhancement
 */
 
 :root {
-  --ui-radius: 16px;
+  --ui-radius: 18px;
   --ui-radius-sm: 12px;
+
+  /* PaperMod tokens (kept) */
   --ui-border: var(--border);
   --ui-bg: var(--theme);
   --ui-card: var(--entry);
   --ui-fg: var(--primary);
   --ui-muted: var(--secondary);
   --ui-accent: var(--link-color);
-  --ui-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
+  /* Cyan system (independent of theme link color) */
+  --ui-cyan: #22d3ee;        /* cyan-400 */
+  --ui-cyan-2: #0ea5e9;      /* sky-500 */
+  --ui-cyan-dim: rgba(34, 211, 238, 0.14);
+  --ui-glow: rgba(34, 211, 238, 0.18);
+
+  /* Depth */
+  --ui-shadow: 0 16px 40px rgba(0,0,0,0.28);
+  --ui-shadow-soft: 0 10px 28px rgba(0,0,0,0.18);
 }
 
-/* Container that plays nice with PaperMod */
+/* ----------------------------
+   Global “Midnight” background
+   ---------------------------- */
+
+/* Dark theme: add a premium gradient + subtle grid texture (CSS-only) */
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(1200px 700px at 18% -12%, rgba(34,211,238,0.18), transparent 55%),
+    radial-gradient(900px 600px at 84% -10%, rgba(14,165,233,0.14), transparent 58%),
+    radial-gradient(900px 600px at 55% 110%, rgba(34,211,238,0.06), transparent 52%),
+    linear-gradient(180deg, #070b14 0%, #060812 45%, #05060a 100%);
+  background-attachment: fixed;
+}
+
+/* Subtle technical grid overlay (very faint) */
+html[data-theme="dark"] body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      rgba(255,255,255,0.03) 0,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.03) 0,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px,
+      transparent 80px
+    );
+}
+
+/* Ensure content sits above background overlay */
+.main, .header, .footer, .page-header, .post-single, .post-content, .toc, .top-link {
+  position: relative;
+  z-index: 1;
+}
+
+/* ----------------------------
+   Container + typography
+   ---------------------------- */
+
 .ui-container {
   max-width: 980px;
   margin: 0 auto;
@@ -24,33 +84,36 @@
 }
 
 .ui-home .ui-section {
-  padding: 26px 0;
+  padding: 28px 0;
 }
 
 .ui-kicker {
   margin: 0 0 10px 0;
   color: var(--ui-muted);
   font-size: 13px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.25px;
 }
 
 .ui-h1 {
-  margin: 0 0 10px 0;
-  font-size: clamp(28px, 4vw, 42px);
-  line-height: 1.08;
+  margin: 0 0 12px 0;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.05;
+  letter-spacing: -0.6px;
 }
 
 .ui-lede {
   margin: 0 0 18px 0;
   color: var(--ui-muted);
   font-size: clamp(15px, 1.8vw, 18px);
-  line-height: 1.55;
+  line-height: 1.6;
+  max-width: 72ch;
 }
 
 .ui-h2 {
   margin: 0 0 10px 0;
   font-size: 18px;
   line-height: 1.25;
+  letter-spacing: -0.2px;
 }
 
 .ui-h3 {
@@ -63,7 +126,37 @@
   margin: 0 0 14px 0;
   color: var(--ui-muted);
   font-size: 14px;
-  line-height: 1.55;
+  line-height: 1.6;
+  max-width: 78ch;
+}
+
+/* ----------------------------
+   Surface cards (keep boxes, make them premium)
+   ---------------------------- */
+
+/* In dark mode: translucent “glass” surfaces */
+html[data-theme="dark"] .ui-split-card,
+html[data-theme="dark"] .ui-chip,
+html[data-theme="dark"] .ui-card,
+html[data-theme="dark"] .ui-cta,
+html[data-theme="dark"] .ui-abstract,
+html[data-theme="dark"] .ui-metrics-grid {
+  background: rgba(18, 24, 38, 0.70);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: var(--ui-shadow-soft);
+  backdrop-filter: blur(10px);
+}
+
+/* Light mode: keep clean */
+html[data-theme="light"] .ui-split-card,
+html[data-theme="light"] .ui-chip,
+html[data-theme="light"] .ui-card,
+html[data-theme="light"] .ui-cta,
+html[data-theme="light"] .ui-abstract,
+html[data-theme="light"] .ui-metrics-grid {
+  background: var(--ui-card);
+  border: 1px solid var(--ui-border);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
 /* Hero split */
@@ -75,18 +168,15 @@
 }
 
 .ui-split-card {
-  background: var(--ui-card);
-  border: 1px solid var(--ui-border);
   border-radius: var(--ui-radius);
-  padding: 14px 14px;
-  box-shadow: var(--ui-shadow);
+  padding: 16px 16px;
 }
 
 .ui-bullets {
   margin: 10px 0 0 18px;
   color: var(--ui-muted);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 @media (min-width: 860px) {
@@ -95,7 +185,10 @@
   }
 }
 
-/* Buttons */
+/* ----------------------------
+   Buttons (make them feel like a product)
+   ---------------------------- */
+
 .ui-cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -109,29 +202,31 @@
   justify-content: center;
   padding: 10px 14px;
   border-radius: 999px;
-  border: 1px solid var(--ui-border);
-  background: var(--ui-card);
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(18, 24, 38, 0.55);
   color: var(--ui-fg);
   text-decoration: none;
   font-size: 13px;
   line-height: 1;
-  box-shadow: var(--ui-shadow);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
 .ui-btn-primary {
-  border-color: rgba(0,0,0,0.0);
-  background: rgba(14,165,233,0.14);
-}
-
-html[data-theme="dark"] .ui-btn-primary {
-  background: rgba(14,165,233,0.22);
+  border-color: rgba(34,211,238,0.18);
+  background: linear-gradient(135deg, rgba(34,211,238,0.22), rgba(14,165,233,0.14));
 }
 
 .ui-btn:hover {
   transform: translateY(-1px);
+  border-color: rgba(34,211,238,0.35);
+  box-shadow: 0 0 0 5px rgba(34,211,238,0.10), 0 14px 28px rgba(0,0,0,0.22);
 }
 
-/* Proof strip */
+/* ----------------------------
+   Proof strip
+   ---------------------------- */
+
 .ui-proof-strip {
   display: grid;
   grid-template-columns: 1fr;
@@ -139,11 +234,8 @@ html[data-theme="dark"] .ui-btn-primary {
 }
 
 .ui-chip {
-  background: var(--ui-card);
-  border: 1px solid var(--ui-border);
   border-radius: var(--ui-radius);
   padding: 12px 12px;
-  box-shadow: var(--ui-shadow);
 }
 
 .ui-chip-title {
@@ -166,7 +258,10 @@ html[data-theme="dark"] .ui-btn-primary {
   }
 }
 
-/* Evidence map */
+/* ----------------------------
+   Evidence map
+   ---------------------------- */
+
 .ui-evidence-map {
   display: flex;
   flex-wrap: wrap;
@@ -179,12 +274,19 @@ html[data-theme="dark"] .ui-btn-primary {
   flex-direction: column;
   gap: 2px;
   padding: 10px 12px;
-  background: var(--ui-card);
-  border: 1px solid var(--ui-border);
+  background: rgba(18, 24, 38, 0.55);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 999px;
   text-decoration: none;
   color: var(--ui-fg);
-  box-shadow: var(--ui-shadow);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.ui-step:hover {
+  transform: translateY(-1px);
+  border-color: rgba(34,211,238,0.30);
+  box-shadow: 0 0 0 4px rgba(34,211,238,0.08), 0 14px 26px rgba(0,0,0,0.22);
 }
 
 .ui-step-k {
@@ -201,7 +303,10 @@ html[data-theme="dark"] .ui-btn-primary {
   font-size: 14px;
 }
 
-/* Cards */
+/* ----------------------------
+   Cards (projects / pubs / case studies)
+   ---------------------------- */
+
 .ui-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -217,13 +322,10 @@ html[data-theme="dark"] .ui-btn-primary {
 
 .ui-card {
   display: block;
-  background: var(--ui-card);
-  border: 1px solid var(--ui-border);
   border-radius: var(--ui-radius);
-  padding: 14px 14px;
+  padding: 16px 16px;
   text-decoration: none;
   color: var(--ui-fg);
-  box-shadow: var(--ui-shadow);
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
@@ -231,7 +333,7 @@ html[data-theme="dark"] .ui-btn-primary {
   margin: 0 0 10px 0;
   color: var(--ui-muted);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .ui-tags {
@@ -244,9 +346,9 @@ html[data-theme="dark"] .ui-btn-primary {
 .ui-tag {
   font-size: 11px;
   color: var(--ui-muted);
-  padding: 5px 8px;
+  padding: 5px 9px;
   border-radius: 999px;
-  border: 1px solid var(--ui-border);
+  border: 1px solid rgba(255,255,255,0.08);
   background: transparent;
 }
 
@@ -259,24 +361,24 @@ html[data-theme="dark"] .ui-btn-primary {
 
 .ui-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(14,165,233,0.45);
-  box-shadow: 0 0 0 4px rgba(14,165,233,0.10), var(--ui-shadow);
+  border-color: rgba(34,211,238,0.40);
+  box-shadow: 0 0 0 6px rgba(34,211,238,0.10), var(--ui-shadow);
 }
 
 /* CTA block */
 .ui-cta {
-  background: var(--ui-card);
-  border: 1px solid var(--ui-border);
   border-radius: var(--ui-radius);
-  padding: 16px 16px;
-  box-shadow: var(--ui-shadow);
+  padding: 18px 18px;
 }
 
-/* Progressive reveal (JS optional) */
+/* ----------------------------
+   Progressive reveal (JS optional)
+   ---------------------------- */
+
 html.js [data-reveal] {
   opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 260ms ease, transform 260ms ease;
+  transform: translateY(12px);
+  transition: opacity 320ms ease, transform 320ms ease;
 }
 
 html.js [data-reveal].is-visible {
@@ -286,7 +388,8 @@ html.js [data-reveal].is-visible {
 
 @media (prefers-reduced-motion: reduce) {
   .ui-btn:hover,
-  .ui-card:hover {
+  .ui-card:hover,
+  .ui-step:hover {
     transform: none;
   }
   html.js [data-reveal] {
@@ -295,14 +398,13 @@ html.js [data-reveal].is-visible {
   }
 }
 
-/* ---------- Inner pages: shortcodes + consistent evidence styling ---------- */
+/* ----------------------------
+   Inner pages: shortcodes styling
+   ---------------------------- */
 
 .ui-abstract {
-  background: var(--ui-card);
-  border: 1px solid var(--ui-border);
   border-radius: var(--ui-radius);
-  padding: 14px 14px;
-  box-shadow: var(--ui-shadow);
+  padding: 16px 16px;
   margin: 14px 0 18px 0;
 }
 
@@ -315,7 +417,7 @@ html.js [data-reveal].is-visible {
 .ui-abstract-body {
   color: var(--ui-fg);
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .ui-meta {
@@ -323,6 +425,7 @@ html.js [data-reveal].is-visible {
   color: var(--ui-muted);
   font-size: 12px;
   line-height: 1.35;
+  opacity: 0.95;
 }
 
 .ui-artifact {
@@ -346,7 +449,7 @@ html.js [data-reveal].is-visible {
 .ui-artifact-body {
   color: var(--ui-muted);
   font-size: 14px;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .ui-artifact-body ul {
@@ -359,17 +462,14 @@ html.js [data-reveal].is-visible {
   color: var(--ui-fg);
 }
 
-/* Metrics strip: rendered from markdown list */
+/* Metrics strip */
 .ui-metrics {
   margin: 14px 0 18px 0;
 }
 
 .ui-metrics-grid {
-  background: var(--ui-card);
-  border: 1px solid var(--ui-border);
   border-radius: var(--ui-radius);
   padding: 12px 14px;
-  box-shadow: var(--ui-shadow);
 }
 
 .ui-metrics-grid ul {
@@ -377,25 +477,29 @@ html.js [data-reveal].is-visible {
   padding-left: 18px;
   color: var(--ui-muted);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .ui-metrics-grid strong {
   color: var(--ui-fg);
 }
 
-/* Make cards feel consistent inside posts */
+/* Links: make them feel intentional */
+.post-content a,
+.ui-card a {
+  text-underline-offset: 3px;
+}
+
+html[data-theme="dark"] .post-content a {
+  color: var(--ui-cyan);
+}
+
+html[data-theme="dark"] .post-content a:hover {
+  color: var(--ui-fg);
+  text-decoration-color: rgba(34,211,238,0.55);
+}
+
+/* Keep PaperMod post content clean with our cards */
 .post-content .ui-card {
-  border: 1px solid var(--ui-border);
   border-radius: var(--ui-radius);
-  box-shadow: var(--ui-shadow);
-}
-
-/* Experience/Publications: improve readability for meta + links */
-.ui-meta {
-  opacity: 0.95;
-}
-
-.post-content a {
-  text-underline-offset: 2px;
 }
