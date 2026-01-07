@@ -41,6 +41,15 @@ jobs:
         with:
           path: site/public
 
+      - name: Sanity check built output contains UI fixes
+        run: |
+          echo "== listing built output =="
+          ls -la site/public | sed -n '1,120p'
+          echo "== search for 'top-link' hide rule in built CSS =="
+          grep -R --line-number "top-link" site/public | head -n 40 || true
+          echo "== search for background gradient in built output =="
+          grep -R --line-number "radial-gradient" site/public | head -n 40 || true
+
   deploy:
     environment:
       name: github-pages
