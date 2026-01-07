@@ -1,0 +1,26 @@
+/* ========== Global background consistency (Home + inner pages) ========== */
+/* Home uses body.list; inner pages may not. Force the same background everywhere. */
+html[data-theme="dark"] body,
+html[data-theme="dark"] body.list,
+html[data-theme="dark"] body.single,
+html[data-theme="dark"] body.page {
+  background:
+    radial-gradient(1200px 700px at 18% -12%, rgba(34, 211, 238, 0.18), transparent 55%),
+    radial-gradient(900px 700px at 80% -10%, rgba(14, 165, 233, 0.14), transparent 58%),
+    radial-gradient(900px 600px at 55% 100%, rgba(34, 211, 238, 0.06), transparent 52%),
+    linear-gradient(180deg, #070b14 0%, #060812 45%, #05060a 100%);
+  background-attachment: fixed;
+}
+
+/* ========== Remove the giant triangle ========== */
+/* This is PaperMod's "Back to top" anchor (#top-link) which contains the SVG. */
+#top-link,
+.top-link {
+  display: none !important;
+}
+
+/* Extra safety: if any SVG still gets rendered, do not let it escape sizing */
+#top-link svg,
+.top-link svg {
+  display: none !important;
+}
