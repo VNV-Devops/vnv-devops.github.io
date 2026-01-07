@@ -46,3 +46,29 @@
   ]
 }
 </script>
+
+{{/* Hello preloader (home only) */}}
+{{ if .IsHome }}
+  {{ $helloCSS := resources.Get "css/extended/hello-preloader.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $helloCSS.RelPermalink }}" integrity="{{ $helloCSS.Data.Integrity }}">
+
+  <script>
+    // Inline early markup injection so it appears immediately (before main content paints).
+    // This avoids layout flash and keeps SEO intact (overlay only).
+    (function () {
+      if (document.getElementById("hello-preloader")) return;
+      var d = document.createElement("div");
+      d.id = "hello-preloader";
+      d.innerHTML =
+        '<div class="hello-wrap">' +
+          '<div class="hello-word"><span id="hello-word">Hello</span><span class="hello-cursor">|</span></div>' +
+          '<div class="hello-sub">Welcome</div>' +
+        '</div>';
+      document.documentElement.appendChild(d);
+    })();
+  </script>
+
+  {{ $helloJS := resources.Get "js/hello-preloader.js" | minify | fingerprint }}
+  <script src="{{ $helloJS.RelPermalink }}" integrity="{{ $helloJS.Data.Integrity }}" defer></script>
+{{ end }}
+
