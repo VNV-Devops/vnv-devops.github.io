@@ -24,3 +24,31 @@ html[data-theme="dark"] body.page {
 .top-link svg {
   display: none !important;
 }
+
+/* ---------- Desktop width tuning (PaperMod) ---------- */
+
+/* Keep comfortable reading width, but use more desktop space */
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1120px; /* default is smaller; adjust 1040–1240 based on taste */
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* Page headers align with main width */
+  .page-header,
+  .post-header {
+    max-width: 1120px;
+  }
+}
+
+/* Very large screens: allow slightly wider */
+@media (min-width: 1440px) {
+  .main {
+    max-width: 1240px;
+  }
+  .page-header,
+  .post-header {
+    max-width: 1240px;
+  }
+}
