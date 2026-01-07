@@ -25,7 +25,6 @@
     { lang: "Русский", text: "Привет" },
   ];
 
-  // Timing tuned to feel like Dennis Snellenberg-style intro
 //   const STEP_MS = 180;          // per-word cadence
 //   const TOTAL_MS = 2200;        // max time before hide
 //   const MIN_STEPS = 9;          // ensure some cycling even on fast loads
